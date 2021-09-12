@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ARA Shop</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+        <div class="topbar" id="top">
+            <nav class="menu">
+                <ul class="navbar pl-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+                    <li class="nav-item"><a href="shop_style.html" class="nav-link">Shop Style</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Elements</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <h3 class="heading-24">ARA SHOP</h3>
+                <p>Shopping online</p>
+            </div>
+            <nav class="shop-action">
+                <ul class="navbar pr-0">
+                    <li class="nav-item"><a href="#" class="nav-link">Search</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Accoutn</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                     <li class="nav-item"><a href="wish_list.html" class="nav-link">Wishlist <sup class="italic">3</sup></a></li>
+                    <li class="nav-item"><a href="my_cart.html" class="nav-link pr-0">Cart <sup class="italic">4</sup> </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="checkout-body">
+    	<div class="container-fluid">
+    		<div class="checkout-banner">
+    			<p class="text-14 dark-gray">Home / Shop Style</p>
+    			<h2 class="heading-36 black">Checkout</h2>
+    		</div>
+    		<div class="checkout-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="billing-address">
+                                <h5 class="text-14 black center">Billing Address</h5>
+                                <form action="" class="checkout-form">
+                                    <div class="form-group">
+                                        <label for="country">Counrty <span>*</span></label>
+                                        <select class="form-control custom-select" name="country" id="country" required>
+                                            <option value="">United Kingdom (uk)</option>
+                                            <option value="">America</option>
+                                            <option value="">Bangladesh</option>
+                                            <option value="">India</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-name">First Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="f-name" name="f-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="l-name">Last Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="l-name" name="l-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Company Name">Company Name</label>
+                                        <input type="text" class="form-control" id="company-name" name="company-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address <span>*</span></label>
+                                        <input type="text" class="form-control" id="s-address" name="s-address" placeholder="Street Address" required>
+                                        <input type="text" class="form-control" id="apartment" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">Town / City <span>*</span></label>
+                                        <input type="text" class="form-control" id="city" name="city" placeholder="Town / City" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">County</label>
+                                        <input type="text" class="form-control" id="state" name="state" placeholder="State / County">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postcode">Postcode <span>*</span></label>
+                                        <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode / Zip" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address <span>*</span></label>
+                                        <input type="text" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone"> Phone <span>*</span></label>
+                                        <input type="text" class="form-control" id="phone" name="phone">
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="confirm-create">
+                                            <input type="checkbox" class="form-check-input" id="confirm-create" name="confirm-create">Create an account?
+                                        </label>
+                                    </div>
+                                    <p class="text-14 dark-gray">Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
+                                    <div class="form-group">
+                                        <label for="password"> Account password<span>*</span></label>
+                                        <input type="password" class="form-control" id="password" name="password" required>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="different-address" class="form-check-label" >
+                                            <input type="checkbox" class="form-check-input" id="different-address" name="different-address">Ship to a different address?
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-notes"> Order Notes</label>
+                                        <textarea class="form-control" id="order-notes" name="order-notes" rows="3"></textarea>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="checkout-promo-code">
+                                <h5 class="text-14 black center">Promotional Code</h5>
+                                <form action="" class="checkout-promo-code-form">
+                                     <div class="form-row align-items-end">
+                                        <div class="col">
+                                            <label for="promo-code">Enter your coupon code if you have one </label>
+                                            <input type="text" class="form-control" id="promo-code" name="promo-code" placeholder="Coupon Code">
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="submit" class="apply-coupon">Apply Coupon</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                   
+                            </form>
+                        </div>
+                            <div class="your-order">
+                                <h5 class="text-14 black center">Your Order</h5>
+                                <table class="order-info">
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Totoal</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Toros Armchair  x <span> 1 </span>  </td>
+                                        <td>1000$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Koriander 3 Seater Sofa  x <span> 1 </span>  </td>
+                                        <td>1500$</td>
+                                    </tr>
+                                </table> 
+                                <hr>
+                                <table>
+                                    <tr>
+                                        <td>Cart Subtotal</td>
+                                        <td>2500%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping and Handling</td>
+                                        <td>Free Shipping</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Order Total<span> 1 </span>  </td>
+                                        <td>2500$</td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <form class="payment-info">
+                                    <div class="form-check">
+                                        <label for="bank-transfer" class="form-check-label">
+                                            <input type="checkbox" name="bank-transfer" class="form-check-input" name="bank-transfer" id="bank-transfer">Direct Bank Transfer</label>
+                                    </div>
+                                    <p class="text-14 dark-gray">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                    <div class="form-check">
+                                        <label for="cheque-payment" class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="cheque-payment" id="cheque-payment">Cheque Payment</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="paypal" class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="paypal" name="paypal">PayPal</label>
+                                    </div>
+                                </form>
+                                <button type="submit">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+    		</div>
+    	</div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="policy">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media">
+                            <img src="images/icon-door6.png" alt=""> 
+                            <div class="policy-content">
+                                <h4>Free Shipping</h4>
+                                <p class="italic">Sed eget ipsum sed ipsum tempus fringilla nec ut est</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <img src="images/icon-left-arrow-circle.png" alt="">
+                            <div class="policy-content">
+                                <h4>Free Return</h4>
+                                <p class="italic">Sed eget ipsum sed ipsum tempus fringilla nec ut est</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <img src="images/icon-map.png" alt="">
+                            <div class="policy-content">
+                                <h4>Order Traking </h4>     
+                                <p class="italic">Sed eget ipsum sed ipsum tempus fringilla nec ut est</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.926522114577!2d90.38386255470985!3d23.752619325296482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzEwLjgiTiA5MMKwMjInNTguNyJF!5e0!3m2!1sen!2sbd!4v1606904002869!5m2!1sen!2sbd" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe> 
+            </div>                                                
+            <div class="bottom-bar">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-links">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a href="about_us.html" class="nav-link">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">visit shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">faqs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">order traking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://binaryoperations.com.bd/" class="nav-link">@By Binary Operations</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bottom-right">
+                            <ul class="social-link">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                            <div class="subscribe">
+                                <input type="email" placeholder="Enter Your email to get greatest deal">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- <div class="back-to-top">
+            <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">               
+                <div class="fs1 to-top" aria-hidden="true" data-icon="&#x32;"></div>
+                TOP
+            </a>
+        </div> -->
+        <button id="to-top" class="back-to-top">
+            <div class="fs1 " aria-hidden="true" data-icon="&#x32;"></div>
+            TOP
+        </button>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-3.11.2.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/category-filter.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
